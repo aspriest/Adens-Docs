@@ -7,3 +7,12 @@ I would like to host my Obsidian notes for free on GitHub pages. To do this I am
 - [Quartz GitHub Project](https://github.com/jackyzha0/quartz)
 
 
+## Server Quartz Locally
+
+To Visualise the Quartz project locally you can run the following command from within in your Quartz project.
+
+```bash
+npx quartz build --serve
+```
+
+*Resource: [Building your Quartz](https://quartz.jzhao.xyz/build)*
