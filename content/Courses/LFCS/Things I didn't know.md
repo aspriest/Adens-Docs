@@ -15,3 +15,6 @@
 - `stat [file]` shows information regarding a file including:
   - size, block, access, modify, change, birth.
   - Inode keeps track of pieces of memory and metadata.
+- `find [dir] -perm /[permission]` Returns files and directories with
+  the specified permissions.
+  - `find . -perm /4000` returns executables with SUID set.

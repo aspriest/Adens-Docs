@@ -102,3 +102,49 @@ Alternatively, you can use number codes to set the permissions. The number are c
 |  111   |    7    |
 
 Example command: `chmod 777 [file/directory]`
+
+## SUID, SGID and Sticky Bit
+
+### SUID
+
+A special permission that allows users to run an executable with the permissions of the executable's owner.
+
+When using SUID we can use the `chmod` command. Now when running chmod we include an additional digit at the beginning. For SUID that is `4`.
+
+e.g.
+
+```bash
+chmod 4664 example-file
+```
+
+Looking at the output of such a command there is two states of interest:
+
+`-rwSrw-r--` or `-rwsrw-r--`
+
+- `S` indicates that the user has executable write by SUID but not by permissions.
+- `s` indicates that the user has both executable write by SUID and permissions.
+
+### SGID
+
+A similar permission, but applies to both executables and directories.
+
+When using SGID we can use the `chmod` command. Now when running chmod we include an additional digit at the beginning. For SUID that is `2`.
+
+e.g.
+
+```bash
+chmod 4664 example-file
+```
+
+Looking at the output of such a command there is two states of interest:
+
+`-rw-rwSr--` or `-rw-rwsr--`
+
+- `S` indicates that the user has executable write by SGID but not by permissions.
+- `s` indicates that the user has both executable write by SGID and permissions.
+
+### Sticky Bit
+
+A special permission that can be set on directories. It restricts file deletion in that directory.
+
+`chmod +t [directory]` or `chmod 1777 [directory]` are example sof how to set a sticky bit. Noting that the `777` is an arbitrary permissions number.
