@@ -95,3 +95,15 @@ Following the file type specification the permissions are defined. Here I have u
 |  w  | Write to file |
 |  x  | Execute (run) |
 |  -  | No permission |
+
+Permissions work linearly, as owner, group and others. The permissions terminates at any of those. For example if a file `test.txt` has owner `x` and group `g` with the following permissions `-r--rw-r--`. If user `x` tries to write to `test.txt` it will be denied. Even though they are part of the group. However if Jane is part of the group but is not an owner she will have write permissions.
+
+To change permissions you can use the command: `chmod [permissions] [file/directory]`
+
+| Class         | Option | Examples                 |
+| ------------- | :----: | ------------------------ |
+| <u>u</u>ser   |   u+   | `u+w`/ `u+rw` / `u+rwx`  |
+| <u>g</u>roup  |   g+   | `g+w` / `g+rw` / `g+rwx` |
+| <u>o</u>thers |   o+   | `o+w` / `o+rw` / `o+rwx` |
+
+_To remove permissions simply replace `+` wth `-`._
