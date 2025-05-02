@@ -72,3 +72,5 @@ jobs:
 ```
 
 3. Ensure that GitHub Pages source is set to 'GitHub Actions' (this is only available on free tier if your repository is made public.)
+
+*Resource: [Hosting](https://quartz.jzhao.xyz/hosting)
