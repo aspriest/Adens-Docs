@@ -100,10 +100,8 @@ Permissions work linearly, as owner, group and others. The permissions terminate
 
 To change permissions you can use the command: `chmod [permissions] [file/directory]`
 
-| Class         | Option | Examples                 |
-| ------------- | :----: | ------------------------ |
-| <u>u</u>ser   |   u+   | `u+w`/ `u+rw` / `u+rwx`  |
-| <u>g</u>roup  |   g+   | `g+w` / `g+rw` / `g+rwx` |
-| <u>o</u>thers |   o+   | `o+w` / `o+rw` / `o+rwx` |
-
-_To remove permissions simply replace `+` wth `-`._
+| Class         | Option  | Examples (where `*` = `+,-,=`) |
+| ------------- | :-----: | ------------------------------ |
+| <u>u</u>ser   | u +/-/= | `u * w`/ `u * rw` / `u * rwx`  |
+| <u>g</u>roup  | g +/-/= | `g * w` / `g * rw` / `g * rwx` |
+| <u>o</u>thers | o +/-/= | `o * w` / `o * rw` / `o * rwx` |
