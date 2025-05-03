@@ -1,0 +1,5 @@
+# Wallpaper Setup
+
+## Swww
+
+## Hyprpaper
