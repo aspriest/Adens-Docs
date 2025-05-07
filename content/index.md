@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Aden's Documentation
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Documentation related to my personal projects and development.
