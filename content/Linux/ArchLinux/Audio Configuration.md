@@ -87,6 +87,6 @@ Default Source: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor
 ```
 ---
 
-#### 
+#### Sources
 https://linuxgenie.net/install-pipewire-on-arch-linux/
 https://runmodule.com/2021/12/11/linux-sound-servers/
