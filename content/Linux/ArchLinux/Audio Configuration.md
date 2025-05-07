@@ -85,3 +85,8 @@ Default Channel Map: front-left,front-right
 Default Sink: alsa_output.pci-0000_00_1b.0.analog-stereo
 Default Source: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor
 ```
+---
+
+#### 
+https://linuxgenie.net/install-pipewire-on-arch-linux/
+https://runmodule.com/2021/12/11/linux-sound-servers/
